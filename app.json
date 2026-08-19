@@ -1,0 +1,100 @@
+{
+  "expo": {
+    "name": "PowerFlexy WebView",
+    "slug": "powerflexy-mobile",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "powerflexy",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#16131A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.powerflexy.app",
+      "buildNumber": "24",
+      "usesAppleSignIn": true,
+      "entitlements": {
+        "com.apple.developer.applesignin": ["Default"]
+      },
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": false
+        },
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Öğün fotoğrafından kalori tahmini için kamera erişimi gerekir. / Camera access is needed to estimate meal calories from a photo.",
+        "NSMicrophoneUsageDescription": "Video kaydı için mikrofon erişimi gerekir (sistem fotoğraf seçicisi). / Microphone access may be required when the system picker records video.",
+        "NSPhotoLibraryUsageDescription": "Öğün fotoğrafından kalori tahmini için galeri erişimi gerekir. / Photo library access is needed to estimate meal calories from a photo.",
+        "NSPhotoLibraryAddUsageDescription": "Çekilen öğün fotoğrafını kaydetmek için galeri yazma izni gerekir. / Permission to save meal photos to your library if needed.",
+        "NSFaceIDUsageDescription": "Uygulamaya Face ID ile giriş yapmak için kullanılır. / Face ID is used to sign in to the app."
+      }
+    },
+    "android": {
+      "package": "com.powerflexy.app",
+      "versionCode": 9,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.INTERNET",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#16131A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-splash-screen",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#C0288C",
+          "defaultChannel": "default",
+          "mode": "production"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Öğün fotoğrafından kalori tahmini için galeri erişimi gerekir. / Photo library access is needed to estimate meal calories from a photo.",
+          "cameraPermission": "Öğün fotoğrafından kalori tahmini için kamera erişimi gerekir. / Camera access is needed to estimate meal calories from a photo.",
+          "microphonePermission": "Video kaydı için mikrofon erişimi gerekir (sistem fotoğraf seçicisi). / Microphone access may be required when the system picker records video."
+        }
+      ],
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-apple-authentication",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Uygulamaya Face ID ile giriş yapmak için kullanılır. / Face ID is used to sign in to the app."
+        }
+      ]
+    ],
+    "extra": {
+      "siteUrl": "https://pro.powerflexy.com",
+      "eas": {
+        "projectId": "fb698c1a-44e6-49cb-a596-a49f76f91e89"
+      }
+    },
+    "owner": "ercanaslan3"
+  }
+}

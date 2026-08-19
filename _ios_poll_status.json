@@ -1,0 +1,43 @@
+{
+  "id": "2ff92c1f-0dc0-43c2-b1df-49695f911154",
+  "status": "FINISHED",
+  "platform": "IOS",
+  "artifacts": {
+    "buildUrl": "https://expo.dev/artifacts/eas/WVbp8NqEMUq4aylncOhMPHr1qqeffme71GzOnrA-WfM.ipa",
+    "xcodeBuildLogsUrl": "https://storage.googleapis.com/eas-workflows-production/logs/fb698c1a-44e6-49cb-a596-a49f76f91e89/2ff92c1f-0dc0-43c2-b1df-49695f911154/2026-08-12T21%3A11%3A23Z-2ff92c1f-0dc0-43c2-b1df-49695f911154-xcode.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260812%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260812T211536Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=08ffcaf9dea2639af1e2013290b406a3d7a46d42f5a07cf0c231649fa1d22118b23a94f53dfd6e9af34a71aa6c4c41361f85916343d1772114dd7dcb6890bbfd1b44f9bc4cd67f419fcf2596e859f3807b85ed2150f6ea12fe7f67778a1165920901169112c6f0efbf535f54fba4a532b1f897acb8ed35a64d29a16c9c707be8dcf7dad22a860114f82682f90c79a7863b73c7ab3472a107fbd558e006ac8c09cacf138811702f09a0b54413edea10f302ec22cfbf29145c925dbc4195b1ef39013cbae13210f416051f5cf81317ff788063b34f3ce229d807a32889012ad006ef2e679e81f6c9402c8b7874e887a93443e11d3eb75efdd7cab7b9491f8e438a",
+    "applicationArchiveUrl": "https://expo.dev/artifacts/eas/WVbp8NqEMUq4aylncOhMPHr1qqeffme71GzOnrA-WfM.ipa"
+  },
+  "initiatingActor": {
+    "id": "88ccb8df-2aa2-4864-bc43-d451814565f9",
+    "displayName": "ercanaslan3"
+  },
+  "logFiles": [
+    "https://storage.googleapis.com/eas-workflows-production/logs/fb698c1a-44e6-49cb-a596-a49f76f91e89/2ff92c1f-0dc0-43c2-b1df-49695f911154/2026-08-12T21%3A11%3A23Z-2ff92c1f-0dc0-43c2-b1df-49695f911154-xcode.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260812%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260812T211536Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=08ffcaf9dea2639af1e2013290b406a3d7a46d42f5a07cf0c231649fa1d22118b23a94f53dfd6e9af34a71aa6c4c41361f85916343d1772114dd7dcb6890bbfd1b44f9bc4cd67f419fcf2596e859f3807b85ed2150f6ea12fe7f67778a1165920901169112c6f0efbf535f54fba4a532b1f897acb8ed35a64d29a16c9c707be8dcf7dad22a860114f82682f90c79a7863b73c7ab3472a107fbd558e006ac8c09cacf138811702f09a0b54413edea10f302ec22cfbf29145c925dbc4195b1ef39013cbae13210f416051f5cf81317ff788063b34f3ce229d807a32889012ad006ef2e679e81f6c9402c8b7874e887a93443e11d3eb75efdd7cab7b9491f8e438a",
+    "https://storage.googleapis.com/eas-workflows-production/logs/fb698c1a-44e6-49cb-a596-a49f76f91e89/2ff92c1f-0dc0-43c2-b1df-49695f911154/2026-08-12T21%3A11%3A23Z-bf32dda6-ec1f-4185-ae99-72578817af0d.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260812%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260812T211536Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=873b1837c519e81d8abe08f77c6b4f9488e552e1e152020ba95c1a1032aeab275d2b1051addfea32d507e3c2047db40ea81e20e1454cb70c90b010a7615e97859e827f312db29982520fb0690bfd13795f5ac6ff22e5a158992a32a4f8c2e349dff372c35a4821b3d64ea530a5b8041a137792c99aed3a7cdb4a1623fd5370306de14c35518099c0fdf55b79fc75a467ab2b46fea9d84b494d0439697226fb133803f1a780117b4546aa9f1ee6e864c58564ed1a38de338dbef1cad06fa69ceee201a27ef2051d958aa543133f2af3e93967539806f1f2d6b8836b5505e709e42719555c53ada37c056fa0fbc59815f8adedc650d4ca4900385609a06b1a72b2"
+  ],
+  "project": {
+    "id": "fb698c1a-44e6-49cb-a596-a49f76f91e89",
+    "name": "powerflexy-mobile",
+    "slug": "powerflexy-mobile",
+    "ownerAccount": {
+      "id": "9df146fe-ed06-4b4a-8a8c-55b1cf0d8738",
+      "name": "ercanaslan3"
+    }
+  },
+  "distribution": "STORE",
+  "buildProfile": "production",
+  "sdkVersion": "57.0.0",
+  "appVersion": "1.0.0",
+  "appBuildVersion": "6",
+  "priority": "NORMAL",
+  "createdAt": "2026-08-12T21:11:17.295Z",
+  "updatedAt": "2026-08-12T21:15:02.830Z",
+  "completedAt": "2026-08-12T21:15:02.512Z",
+  "expirationDate": "2026-09-11T21:11:17.351Z",
+  "isForIosSimulator": false,
+  "metrics": {
+    "buildWaitTime": 3821,
+    "buildQueueTime": 28630,
+    "buildDuration": 192766
+  }
+}

@@ -1,0 +1,67 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+
+# Apple API keys (submit uses local path; do not publish)
+AuthKey_*.p8
+*.p8
+*.pem
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Firebase / FCM / Play secrets
+fcm-service-account.json
+play-service-account.json
+# google-services.json is client config — must be uploaded to EAS (not gitignored)
+
+# Local temps
+.asc_token.tmp
+.asc_*.tmp.*
+.asc_*_out.json
+.site_home.tmp.html
+.tmp_*
+asc_screenshots/
+asc_screenshots_mobile/
+asc_screenshots_iphone67/
+asc_screenshots_upload/
+.asc/
+.tmp_asc_cli/
+_ios_*.txt
+_ios_*.bin
+_eas_*.bat
+_asc_*.py
+_fix_*.py
+_fetch_*.py
+_parse_*.py
+
+# NOTE: credentials.json + credentials/* (p12/mobileprovision) must NOT be gitignored
+# while using eas.json ios.credentialsSource=local — EAS upload respects gitignore.

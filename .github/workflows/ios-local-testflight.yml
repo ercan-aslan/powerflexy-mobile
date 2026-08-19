@@ -1,0 +1,77 @@
+name: iOS Local Build to TestFlight
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: EAS profile
+        required: false
+        default: production
+
+permissions:
+  contents: read
+
+jobs:
+  ios-local-build:
+    runs-on: macos-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate EXPO_TOKEN
+        run: |
+          if [ -z "${EXPO_TOKEN}" ]; then
+            echo "Missing EXPO_TOKEN. On a free org this secret only works for public repos."
+            exit 1
+          fi
+
+      - name: Install EAS CLI
+        run: npm install -g eas-cli@latest
+
+      - name: Write Apple API key if provided
+        env:
+          ASC_API_KEY_P8: ${{ secrets.ASC_API_KEY_P8 }}
+        run: |
+          if [ -n "$ASC_API_KEY_P8" ]; then
+            printf '%s' "$ASC_API_KEY_P8" > AuthKey_9G25JDJRZR.p8
+          fi
+
+      - name: iOS local build
+        run: |
+          eas build \
+            --platform ios \
+            --local \
+            --profile "${{ inputs.profile }}" \
+            --non-interactive \
+            --output "./build.ipa"
+
+      - name: Submit to TestFlight
+        run: |
+          if [ ! -f AuthKey_9G25JDJRZR.p8 ]; then
+            echo "AuthKey missing; skip TestFlight submit. Add ASC_API_KEY_P8 repo/org secret later."
+            exit 0
+          fi
+          eas submit \
+            --platform ios \
+            --profile "${{ inputs.profile }}" \
+            --non-interactive \
+            --path "./build.ipa"
+
+      - name: Upload ipa artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build-ipa
+          path: build.ipa
+          if-no-files-found: warn

@@ -1,0 +1,12 @@
+30:   GRADLE_OPTS=-Dorg.gradle.jvmargs="-XX:MaxMetaspaceSize=1g -Xmx5g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=true -Dorg.gradle.daemon=false
+30: 18/20 checks passed. 2 checks failed. Possible issues detected:
+30: ? Check Expo config (app.json/ app.config.js) schema
+30: Error validating fields in /Users/expo/workingdir/build/app.json:
+30: Resolve schema errors in your app config. Learn more: https://docs.expo.dev/workflow/configuration/
+30: 2 checks failed, indicating possible issues with the project.
+50: Command "expo doctor" failed.
+30: Getting distribution certificate fingerprint and common name
+30: Fingerprint = "420860AC8D1B36BCD5B562FDC1C89EF3F4DBA804", common name = iPhone Distribution: Ercan ASLAN (ZSMFNJV9RU)
+30: Importing distribution certificate into the keychain
+30: Validating whether the distribution certificate has been imported successfully
+50: Build failed

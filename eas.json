@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "node": "22.14.0",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": false
+      }
+    },
+    "production": {
+      "distribution": "store",
+      "autoIncrement": false,
+      "cache": {
+        "key": "apple-signin-24"
+      },
+      "node": "22.14.0",
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "credentialsSource": "local"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleTeamId": "ZSMFNJV9RU",
+        "ascAppId": "6800939945",
+        "ascApiKeyPath": "./AuthKey_9G25JDJRZR.p8",
+        "ascApiKeyId": "9G25JDJRZR",
+        "ascApiKeyIssuerId": "ad300a90-3b98-4947-88a3-9070636212c7"
+      }
+    }
+  }
+}
